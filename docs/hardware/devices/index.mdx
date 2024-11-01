@@ -126,7 +126,8 @@ Inexpensive basic ESP32-based boards.
 | [LoRa32 V2.1](./heltec-automation/lora32/?heltec=v2.1)                              | ESP32       | SX127x | 2.4GHz b/g/n | 4.2 | NO  |
 | [LoRa32 V3/3.1](./heltec-automation/lora32/?heltec=v23)                             | ESP32-S3FN8 | SX1262 | 2.4GHz b/g/n | 5.0 | NO  |
 | [Wireless Stick Lite V3](./heltec-automation/lora32/?heltec=Wireless+Stick+Lite+V3) | ESP32-S3FN8 | SX1262 | 2.4GHz b/g/n | 5.0 | NO  |
-| [Wireless Tracker](./heltec-automation/lora32/?heltec=tracker)                      | ESP32-S3FN8 | SX1262 | 2.4GHz b/g/n | 5.0 | YES |
+| [Wireless Tracker v1.0](./heltec-automation/lora32/?heltec=tracker-v1.0)            | ESP32-S3FN8 | SX1262 | 2.4GHz b/g/n | 5.0 | YES |
+| [Wireless Tracker v1.1](./heltec-automation/lora32/?heltec=tracker-v1.1)            | ESP32-S3FN8 | SX1262 | 2.4GHz b/g/n | 5.0 | YES |
 | [Wireless Paper](./heltec-automation/lora32/?heltec=paper)                          | ESP32-S3FN8 | SX1262 | 2.4GHz b/g/n | 5.0 | NO  |
 
 ### [Plug & Play Sensors](./heltec-automation/sensor/)
@@ -189,6 +190,8 @@ Meshtastic offers support for Raspberry Pi devices through our Linux native plat
 
 ### SenseCap
 
+The SenseCAP product line offers a comprehensive range of solutions for both hobbyists and industrial users, featuring the T1000-E card tracker, an IP65-rated, ready-to-go Meshtastic device, and the Indicator with a 4-inch touchscreen driven by ESP32-S3 and RP2040 Dual-MCU, coming soon.
+
 | Name                                                          | MCU           | Radio  | WiFi | BT  | GPS |
 | ------------------------------------------------------------- | ------------- | ------ | ---- | --- | --- |
 | [Card Tracker T1000-E](./seeed-studio/sensecap/card-tracker/) | nRF52840      | LR1110 | NO   | 5.1 | YES |
@@ -219,6 +222,15 @@ All-in-one development device with LoRa, WiFi, BT, touchscreen, accelerometer, g
 | :------------------- | :--------------- | :----- | :--: | :-: | :-: |
 | [unPhone](./unPhone) | ESP32-S3-WROOM-1 | RF950W | YES  | 5.0 | NO  |
 
+### [Seeed Wio-WM1110](./seeed-studio/wm1110)
+
+nRF52840-based development boards with GPS, and multiple ports to attach sensors.
+
+| Name                                                                      | MCU      | Radio  | WiFi | BT  | GPS |
+| :------------------------------------------------------------------------ | :------- | :----- | :--: | :-: | :-: |
+| [Seeed Wio-WM1110 Dev Kit](./seeed-studio/wm1110?wm1110=wio-sdk-wm1110)   | nRF52840 | LR1110 | YES  | 5.3 | YES |
+| [Seeed Wio Tracker 1110](./seeed-studio/wm1110?wm1110=wio-tracker-wm1110) | nRF52840 | LR1110 | YES  | 5.3 | YES |
+
 ## [Chatter](./chatter)
 
 DIY kit with ESP32, LoRa chip, and optional GPS. Designed for STEM education.
@@ -226,3 +238,9 @@ DIY kit with ESP32, LoRa chip, and optional GPS. Designed for STEM education.
 | Name                 | MCU   | Radio  | WiFi | BT  | GPS |
 | :------------------- | :---- | :----- | :--: | :-: | :-: |
 | [Chatter](./chatter) | ESP32 | LLCC68 | YES  | 4.2 | No  |
+
+### Radio Master
+
+| Name                  | MCU              | Radio  | WiFi | BT  | GPS |
+| :-------------------- | :--------------- | :----- | :--: | :-: | :-: |
+| Bandit Nano ExpressLRS 900 | ESP32 | SX1276 + SKY66122 PA/LNA +30db TX, +16db RX ) | ?  | YES | NO  |
