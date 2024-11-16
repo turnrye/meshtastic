@@ -2,8 +2,6 @@ on:
   schedule:
     - cron: 0 0 1 * * # run monthly
   workflow_dispatch:
-  # push:
-  # ...
 
 name: Broken Link Check
 jobs:
@@ -11,5 +9,9 @@ jobs:
     name: Broken Link Check
     runs-on: ubuntu-latest
     steps:
-      - name: Broken Link Check
-        uses: technote-space/broken-link-checker-action@v2
+    - name: Run Broken Links Checker
+      run: npx broken-link-checker $WEBSITE_URL --ordered --recursive \
+      --user-agent "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/109.0" \
+
+env:
+  WEBSITE_URL: "https://meshtastic.org/"
